@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <title>World Clock</title>
+</head>
+
+<body>
+    <div class="image-section position-relative">
+        <div class="full-container position-absolute mt-3 top-0 start-50 translate-middle-x rounded">
+            <div class="container">
+                <h1>World Clock</h1>
+
+                <select id="city">
+                    <option value="">Select a city</option>
+                    <option value="current">My current location</option>
+                    <option value="Europe/Paris">Paris</option>
+                    <option value="Asia/Seoul">Seoul</option>
+                    <option value="Europe/Amsterdam">Amsterdam</option>
+                    <option value="Asia/Singapore">Singapore</option>
+                    <option value="America/Mexico_City">Mexico City</option>
+                    <option value="America/Toronto">Toronto</option>
+
+                </select>
+
+                <div id="cities">
+                    <div class="city" id="san-francisco">
+                        <div>
+                            <h2>San Francisco</h2>
+                            <div class="date"></div>
+                        </div>
+                        <div class="time"></div>
+                    </div>
+                    <div class="city" id="madrid">
+                        <div>
+                            <h2>Madrid</h2>
+                            <div class="date"></div>
+                        </div>
+                        <div class="time"></div>
+                    </div>
+                    <div class="city" id="london">
+                        <div>
+                            <h2>London</h2>
+                            <div class="date"></div>
+                        </div>
+                        <div class="time"></div>
+                    </div>
+                    <div class="city" id="new-york">
+                        <div>
+                            <h2>New York</h2>
+                            <div class="date"></div>
+                        </div>
+                        <div class="time"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class=" mx-5">
+                This is coded by <strong>Tinyiko Maswanganyi</strong> and <a
+                    href="https://github.com/tinyiko-gif" alt="github-link" class="github-link">open source
+                    code</a> on Github.
+                <br>
+    
+            </footer>
+        </div>
+        <img src="images/mountain-covered-in-snow.jpg" alt="mountain covered in snow pic"
+            class="mountain-covered-in-snow-pic object-fit-md-contain mw-100 mh-100">
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
